@@ -7,11 +7,11 @@ The data provided shows us many different categories related to kickstarters for
 
 ## Analysis and Challenges
 ### Analysis of Outcomes Based on Launch Date
-The first analysis I performed was Theater Outcomes based on Launch date. To do this, I had to use the Year() function to find the launch year of all kickstarters. Once I had a new column with the Launch year, I used the 'Kickstarter' sheet to create a pivot table. By filtering by "Parent Category" I was able to find only Theater kickstarters. In the graph titled "Theater Outcomes Vs Launch" I have put the months on the x-axis and the count of outcomes on the y-axis in order to visualize the data shown in the pivot table to easily identify any trends. 
+The first analysis I performed was Theater Outcomes based on Launch date. To do this, I had to use the Year() function to find the launch year of all kickstarters. Once I had a new column with the Launch year, I used the 'Kickstarter' sheet to create a pivot table. By filtering by "Parent Category" I was able to find only Theater kickstarters. This allowed me to see the outcomes for all theater kickstarters for any given month. In the graph titled "Theater Outcomes Vs Launch" I have put the months on the x-axis and the count of outcomes on the y-axis in order to visualize the data shown in the pivot table to easily identify any trends. 
 ![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/90940985/145268556-3edf56ba-1074-4a18-b7a1-a3d38ad0b82d.png)
 
 ### Analysis of Outcomes Based on Goals
-For this analysis, we were looking at the outcomes based on each play kickstarter's goals. To do this analysis, we used the COUNTIFS() function in Excel to count each kickstarter outcome that fit the criteria speficied i.e. amount and subcategory. By looking at the graph below you can see the percentages of 'Successful', 'failed', and 'canceled' kickstarters at each goal range. This vizualization allows us to see the trends more clearly than in the table.
+For this analysis, we were looking at the outcomes based on each play kickstarter's goals. To do this analysis, we used the COUNTIFS() function in Excel to count each kickstarter outcome that fit the criteria speficied i.e. amount and subcategory. According to the instructions, we split up the goals into 12 differenct ranges and used the countifs formula to find outcomes within the specified ranges. Along with the goal ranges, we also included the outcome as a criteria (successful, failed, canceled), as well as the subcategory "plays". By looking at the graph below you can see the percentages of 'Successful', 'failed', and 'canceled' kickstarters at each goal range. This vizualization allows us to see the trends more clearly than in the table.
 ![Outcomes_vs_Goals](https://user-images.githubusercontent.com/90940985/145268631-b195474b-2ae0-4cb3-9886-3ffe23e3a991.png)
 
 ### Challenges and Difficulties Encountered
@@ -22,7 +22,7 @@ A challenge you could run into regarding these analysis could be getting the par
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
 Two conclusions I can draw about the Theater Outcomes by Goal are that kickstarters launched in May clearly have the most successful kickstarters, and the winter months do not appear to be as successful as the spring/summer months.
 - What can you conclude about the Outcomes based on Goals?
-By looking at the analysis of the outcomes based on goals, as the goal increases in value, the percentage successful starts to decline. This shows me that the lower the kickstarter goal, the better the chances of successfully meeting that goal. Aside from the increase from 35,000 to 40,000 which could be due to other circumstances.
+By looking at the analysis of the outcomes based on goals, as the goal increases in value, the percentage successful starts to decline. This shows me that the lower the kickstarter goal, the better the chances of successfully meeting that goal. Aside from the increase from 35,000 to 40,000 which could be due to other circumstances. Correlation does not inherently mean causation, but with the analysis provided it is reasonable to assume that as the goal increases, the success rate decreases.
 
 - What are some limitations of this dataset?
 Some limitations of this data are that there could be outliers that skew the results, the data could be just a sample size and not contain all possible data for this analysis.
